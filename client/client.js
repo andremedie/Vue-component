@@ -12,6 +12,8 @@ Vue.component('nav-menu', MenuComponent);
 Vue.component('admin-page', AdminPageComponent);
 Vue.component('product-admin', ProductAdminComponent);
 Vue.component('category', CategoryComponent);
+Vue.component('order', OrderComponent);
+Vue.component('category-admin', CategoryAdminComponent)
 
 
 const http = axios; // using axios 3rd party XHR/REST lib

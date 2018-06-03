@@ -87,6 +87,12 @@ app.post('/rest/pay', async(req, res)=>{
   res.json(charge);
  });
 
+
+ app.get('/rest/orders' , async (req,res)=>{
+  let orders = await Order.find();
+  res.json(orders);
+});
+
 app.get('/rest/products', async(req, res)=>{
   //res.send('We are products');
   let products = await Product.find().populate('categories'); // {name:"The Times"}
